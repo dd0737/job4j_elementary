@@ -33,4 +33,18 @@ public class PointTest {
         Point b = new Point(2, 6);
         assertEquals(5.09, a.distance(b), 0.01);
     }
+
+    @Test
+    public void when111to333then3dot46() {
+        Point a = new Point(1, 1, 1);
+        Point b = new Point(3, 3, 3);
+        assertEquals(3.46, a.distance3d(b), 0.01);
+    }
+
+    @Test
+    public void when123to567then6dot92() {
+        Point a = new Point(1, 2, 3);
+        Point b = new Point(5, 6, 7);
+        assertEquals(6.92, a.distance3d(b), 0.01);
+    }
 }
